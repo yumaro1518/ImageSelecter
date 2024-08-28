@@ -1,0 +1,20 @@
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 10px;
+}
+
+.image-card {
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: border-color 0.3s;
+}
+
+.image-card.selected {
+  border-color: blue;
+}
+
+.image-card img {
+  width: 100%;
+  height: auto;
+}
